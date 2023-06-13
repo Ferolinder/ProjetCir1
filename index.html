@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="script.js" defer></script>
+    <title>Filmoth'ISEN</title>
+</head>
+
+<!-- content of the header -->
+<header>
+    <div id="header">
+        <h1>Filmoth'ISEN</h1>
+    </div>
+</header>
+
+<!-- content of the body -->
+<body>
+    <div id="podium">
+        <h2>Podium des procteurs les plus productifs !</h2>
+        <div class="container">
+            <div id="empty"></div>
+            <div id="F1" style="background-color: initial; color:aliceblue; vertical-align: bottom;"></div>
+            <div id="empty"></div>
+
+            <div id="F2" style="background-color: initial; color:aliceblue"></div>
+            <div id="F1"></div>
+            <div id="empty"></div>
+
+            <div id="F2"></div>
+            <div id="F1"></div>
+            <div id="F3" style="background-color: initial; color:aliceblue"></div>
+
+            <div id="F2"></div>
+            <div id="F1"></div>
+            <div id="F3"></div>
+
+            <div id="F2"></div>
+            <div id="F1"></div>
+            <div id="F3"></div>
+        </div>
+    </div>
+   
+    
+    <div style="padding-right: 20%; padding-left: 20%;">
+        <hr >
+    </div>
+
+    <div id="selector">
+        <h2>Selectionneur</h2>
+        
+        <div class="element">
+            <div id="time-select" style="grid-column: 1/2; padding-left: 10%;">
+                <h2 class="Blue">Sélection par durée</h2>
+                <p id="timeIndent" style="width: fit-content;" class="Blue">Durée sélectionnée : </p>
+                
+                <form id="selct1" style="display:grid"><input class="Blue" id="range" style="overflow: hidden;" type="range"  min="0" max="100" value="90" step="10" onchange="getAndReplaceTime()"></form>
+                <a href="#open"><button type="button" class="Blue" onclick="openModal('duration')">Chercher</button></a>
+            </div>
+
+            <hr class="separator">
+
+            <div id="real-select" style=" grid-column: 3/4; padding-right: 10%; ">
+                <h2 class="Blue">Sélection par Producteur</h2>
+                <form id="selct2"><textarea class="Blue" style="overflow: hidden;box-sizing: border-box; width: 100%; height: 150px;">entrez le nom du producteur</textarea></form>
+                <a href="#open"><button class="Blue" type="button" onclick="openModal('director')">Chercher</button></a>
+            </div>
+
+            
+
+            <div id="type-select" style="grid-column: 1/2; padding-left: 10%;">
+                <h2 class="Blue">Selection par Type</h2>
+                <form style="display:grid">
+                    <select id="TypeSelect" style="overflow: hidden;" class="Blue">
+                        <option value="">--Sélectionnez le type--</option>
+                        <option value="action">Action</option>
+                        <option value="guerre">Guerre</option>
+                        <option value="aventure">Aventure</option>
+                        <option value="comédie">Comédie</option>
+                        <option value="horreur">Horror</option>
+                        <option value="histoire">Histoire</option>
+                        <option value="drame">Drame</option>
+                        <option value="comédie dramatique">Comédie dramatique</option>
+                        <option value="animation">Animation</option>
+                        <option value="musical">Musical</option>
+                        <option value="policier">Policier</option>
+                        <option value="espionnage">Espionnage</option>
+                        <option value="sf">SF</option>
+                        <option value="fantastique">Fantastique</option>
+                        <option value="western">Western</option>
+                        <option value="documentaires">Documentaires</option>
+                    </select>
+                </form>
+                    
+                <a href="#open"><button type="button" class="Blue" onclick="openModal('type')">Submit</button></a>
+            </div>
+
+            <hr class="separator">
+
+            <div id="real-select" style=" grid-column: 3/4; padding-right: 10%; ">
+                <h2 class="Blue">Selection par titre </h2>
+                <form id="selct4"><textarea class="Blue" style="overflow: hidden;box-sizing: border-box; width: 100%; height: 150px;" id="TitleSelect">Entrez le titre d'un film</textarea></form>
+                <a href="#open"><button class="Blue" type="button" onclick="openModal('title')">Submit</button></a>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <br>
+
+    <div id="AddFilm">
+        <h2>Ajouter un film</h2>
+        <form id="FilmToAdd">
+            <p class="Blue">Titre<input value="default" type="text" id="addTitle" class="Blue"></input></p>
+            <p class="Blue">Durée<input id="addDuration" type="time" class="Blue"></p>
+            <p class="Blue">Producteur<input type="text" id="addProductor" class="Blue"></input></p>
+            <select id="addType" style="overflow: hidden;" class="Blue">
+                <option value="">--Sélectionnez le type--</option>
+                <option value="action">Action</option>
+                <option value="guerre">Guerre</option>
+                <option value="aventure">Aventure</option>
+                <option value="comédie">Comédie</option>
+                <option value="horreur">Horror</option>
+                <option value="histoire">Histoire</option>
+                <option value="drame">Drame</option>
+                <option value="comédie dramatique">Comédie dramatique</option>
+                <option value="animation">Animation</option>
+                <option value="musical">Musical</option>
+                <option value="policier">Policier</option>
+                <option value="espionnage">Espionnage</option>
+                <option value="sf">SF</option>
+                <option value="fantastique">Fantastique</option>
+                <option value="western">Western</option>
+                <option value="documentaires">Documentaires</option>
+            </select>
+        </form>
+        <button class="Blue" type="button" onclick="addFilm()">Ajouter</button>
+        <div id="locationAddFilm" style="display:grid; grid-template-columns: 20% 20% 20% 20% 20%;">
+            
+        </div>
+    </div>
+
+    <br>
+
+    <div style="display:grid; place-items:center">
+        <h2>Ce déconnecter du serveur</h2>
+        <button id="disconnectButton" type="button" class="Blue" style="width: 40%; height: 200px; position: relative; text-align: center; background-color: #A3CEF1; color:#2B2D42" onclick="TransformButton()">Disconnect from servor</button>
+    </div>
+
+    <div id="open" class="modalBox" style="overflow:scroll;">
+        <div id="modalContent">
+            <div style="display:grid; grid-template-columns: 10% 80% 10%; grid-template-rows: 20px;">
+                <a class="close" title="Fermer" href="#close" style="grid-column: 1/2;">X</a>
+                <div id="ExecutionTime" style="grid-column: 3/4;">0:00s</div>
+            </div>
+            
+            <h1>Type de sélection</h1>
+            <table_h>
+                <thead>
+                    <tr>
+                        <th class="Blue" style="border-radius: 0;">Titre</th>
+                        <th class="Blue" style="border-radius: 0;">Durée</th>
+                        <th class="Blue" style="border-radius: 0;">Réalisateur</th>
+                        <th class="Blue" style="border-radius: 0;">Type</th>  
+                    </tr>
+                                      
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td class="Blue">Hilda et le roi de la montagne</td>
+                        <td class="Blue">1h23</td>
+                        <td class="Blue">Luke Pearson</td>
+                        <td class="Blue">Amour</td>
+                    </tr> -->
+                </tbody>
+                
+            </table_h>
+        </div>
+    </div>
+    
+</body>
+
+<br>
+
+<footer>
+    <div class="gridFooter">
+        <div style="grid-column: 1/2;">
+            Julien Maret
+            <div class="gridFooter">
+                <div style="grid-column: 1/2;"><img src="Images/Insta2.png" heigth="23%" width="23%" style="float: right;"> </div>
+                <div style="grid-column: 3/4;"><img src="Images/Twitter2.png" heigth="26%" width="26%"> </div>
+                <div style="grid-column: 5/6;"><img src="Images/Linkedin2.png" heigth="26%" width="26%" style="float: left;"> </div>
+            </div>
+        </div>
+        <div style="grid-column: 3/4;">
+            Wisam Lahmidi
+            <div class="gridFooter">
+                <div style="grid-column: 1/2;"><img src="Images/Insta2.png" heigth="23%" width="23%" style="float: right;"> </div>
+                <div style="grid-column: 3/4;"><img src="Images/Twitter2.png" heigth="26%" width="26%"> </div>
+                <div style="grid-column: 5/6;"><img src="Images/Linkedin2.png" heigth="26%" width="26%" style="float: left;"> </div>
+            </div>
+        </div>
+        <div style="grid-column: 5/6;">
+            Achille Wagner
+            <div class="gridFooter">
+                <div style="grid-column: 1/2;"><img src="Images/Insta2.png" heigth="23%" width="23%" style="float: right;"> </div>
+                <div style="grid-column: 3/4;"><img src="Images/Twitter2.png" heigth="26%" width="26%"> </div>
+                <div style="grid-column: 5/6;"><img src="Images/Linkedin2.png" heigth="26%" width="26%" style="float: left;"> </div>
+        </div>
+    </div>
+</footer>
+
+
+</html>
+    
