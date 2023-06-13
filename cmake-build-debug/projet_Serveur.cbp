@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="projet_Serveur"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="projet_Serveur">
+				<Option output="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/projet_Serveur" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 projet_Serveur"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="projet_Serveur/fast">
+				<Option output="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/projet_Serveur" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 projet_Serveur/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/HashTableCategory.h">
+			<Option target="projet_Serveur"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/HashTableLength.c">
+			<Option target="projet_Serveur"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/HashTableLength.h">
+			<Option target="projet_Serveur"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/ListDirector.h">
+			<Option target="projet_Serveur"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/ListMovies.c">
+			<Option target="projet_Serveur"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/ListMovies.h">
+			<Option target="projet_Serveur"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/Movie.c">
+			<Option target="projet_Serveur"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/Movie.h">
+			<Option target="projet_Serveur"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/TreeReal.c">
+			<Option target="projet_Serveur"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/TreeReal.h">
+			<Option target="projet_Serveur"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/main.c">
+			<Option target="projet_Serveur"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/trie.h">
+			<Option target="projet_Serveur"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ferol/CLionProjects/Serveur1PFA/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

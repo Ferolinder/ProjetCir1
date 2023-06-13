@@ -1,0 +1,194 @@
+html{
+    background-color: #2B2D42;
+}
+
+.Blue{
+    background-color: #A3CEF1;
+    color:#2B2D42;
+    margin:10px;
+    padding:10px;
+    border-radius:25px;
+}
+
+.element{
+    display: grid; 
+    grid-template-columns: 48% 4% 48%;
+    /* grid-template-rows: 1fr 1fr; */
+    row-gap: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h2{
+    margin-left:5%;
+    margin-right: 5%;
+    text-align: center;
+    padding:30px;
+    background-color: #6096BA;
+    color:#F8F7F9;
+    border-radius: 25px;
+}
+
+header{
+    text-align: center;
+    background-color: #6096BA;
+    color:#E7ECEF;
+    padding:50px;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 70px 70px 70px 150px 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+}
+
+#F1{
+    background-color: yellow;
+    padding-top: 30px;
+}
+
+#F2{
+    background-color: grey;
+    padding-top: 30px;
+}
+
+#F3{
+    background-color: green;
+    padding-top: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.modalBox {
+    position:fixed;
+    font-family: Arial, Helvetica,sans-serif;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background: rgba(43, 45, 66,0.8);
+    color:black;
+    /* z-index:99999; */
+    opacity :0;
+    -webkit-transition:opacity 400ms ease-in;
+    -moz-transition:opacity 400ms ease-in;
+    transition:opacity 400ms ease-in;
+    pointer-events:none;
+  }
+  /*Quand on click sur les href*/
+  .modalBox:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  /*Positionnement de la boîte enfant*/
+  .modalBox>div {
+    width:80%;
+    position:relative;
+    margin:0.5% auto;
+    padding:5px 20px 13px 20px;
+    border-radius:0px;
+    background:white;
+  }
+  /*Positionnement et style du bouton fermer*/
+  .close {
+    color:black;
+    line-height:25px;
+    right:1px;
+    text-align:center;
+    top:1px;
+    width:35px;
+    text-decoration:none;
+    font-weight:bold;
+    -webkit-border-radius:12px;
+    -moz-border-radius:12px;
+    border-radius:12px;
+    -moz-box-shadow:1px 1px 3px #000;
+    -webkit-box-shadow:1px 1px 3px #000;
+    box-shadow:none;
+    border:none;
+  }
+  /*Style lorsque la souris survole le bouton fermer*/
+  .close:hover {
+    color:white;
+  }
+  /*Style par défaut du bouton ouvrir le popup*/
+  .button {
+    background-color:black;
+    border:none;
+    padding:2px 10px;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:16px;
+    /* margin:4px 2px; */
+    cursor:pointer;
+  }
+
+#modalContent h1{
+    text-align: center;
+    background-color: #A3CEF1;
+    color :#2B2D42;
+}
+
+#modalContent{
+    background-color: #6096BA;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    border-spacing: 1em;
+}
+
+footer{
+    background-color: #A3CEF1;
+    color: #000000;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.gridFooter{
+    display : grid;
+    text-align: center;
+    grid-template-columns: 33% 0.5% 33% 0.5% 33%;
+    grid-template-rows:max-content;
+    position: relative;
+}
+
+#AddFilm form{
+    display:grid;
+    grid-template-columns: 25% 25% 25%  25%;
+    grid-template-rows: 20%;
+    text-align: center;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+.tremblement{
+    animation: shake 0.82s cubic-bezier(.50,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
